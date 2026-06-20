@@ -36,7 +36,7 @@
       "CSRF 방어 구현",
       "CORS 설정"
     ],
-    "portfolioImg": "../../public/project/football-quiz.PNG"
+    "portfolioImg": "football-quiz.PNG"
   },
   {
     "id": "retro-tetris",
@@ -78,7 +78,7 @@
       "CSRF 방어 구현",
       "백엔드 랭킹 API 연동"
     ],
-    "portfolioImg": "../../public/project/retro-tetris.PNG"
+    "portfolioImg": "retro-tetris.PNG"
   },
   {
     "id": "asset-portfolio",
@@ -101,6 +101,6 @@
       "GitHub Pages 정적 배포",
       "로컬 스토리지 데이터 관리"
     ],
-    "portfolioImg": "../../project/asset-portfolio-benchmark.PNG"
+    "portfolioImg": "asset-portfolio-benchmark.PNG"
   }
 ]

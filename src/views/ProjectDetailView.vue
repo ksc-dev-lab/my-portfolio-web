@@ -11,6 +11,8 @@ const project = computed(() => {
   const id = Array.isArray(route.params.id) ? route.params.id[0] : route.params.id
   return projects.find(p => p.id === id)
 })
+
+const baseUrl = import.meta.env.BASE_URL
 </script>
 
 <template>
@@ -30,7 +32,7 @@ const project = computed(() => {
           <p class="text-lg text-gray-600 dark:text-gray-400 leading-relaxed">{{ project.description }}</p>
         </div>
 
-        <img v-if="project.portfolioImg" :src="project.portfolioImg" class="my-2"/>
+        <img v-if="project.portfolioImg" :src="baseUrl + project.portfolioImg" class="w-full rounded-xl my-6 border border-gray-200 dark:border-gray-700"/>
         <div class="flex flex-wrap gap-3 mb-10">
           <a
             v-if="project.liveUrl"
