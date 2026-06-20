@@ -1,0 +1,26 @@
+[
+  {
+    "id": "football-quiz-redis",
+    "title": "Redis Cache-Aside 패턴으로 랭킹 API 최적화하기",
+    "date": "2025-11-15",
+    "tags": ["NestJS", "Redis", "Cache", "PostgreSQL"],
+    "summary": "축덕 퀴즈 TOP10 랭킹 시스템에 Redis Cache-Aside 패턴을 적용해 DB 부하를 줄인 과정을 정리합니다.",
+    "url": ""
+  },
+  {
+    "id": "tetris-canvas-gameloop",
+    "title": "Canvas API로 테트리스 게임 루프 직접 구현하기",
+    "date": "2025-10-20",
+    "tags": ["Canvas", "Game Loop", "JavaScript", "React"],
+    "summary": "requestAnimationFrame과 게임 상태 관리를 사용해 테트리스 게임 루프를 직접 구현한 경험을 공유합니다.",
+    "url": ""
+  },
+  {
+    "id": "recharts-financial-dashboard",
+    "title": "Recharts로 금융 데이터 시각화 대시보드 만들기",
+    "date": "2025-09-10",
+    "tags": ["Recharts", "Next.js", "Data Visualization", "TypeScript"],
+    "summary": "자산 포트폴리오 벤치마크 프로젝트에서 Recharts를 활용해 인터랙티브 차트를 구현한 경험입니다.",
+    "url": ""
+  }
+]
