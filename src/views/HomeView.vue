@@ -96,13 +96,15 @@ const blogPosts = (blogPostsData as BlogPost[]).slice(0, 3)
         <p class="text-gray-500 dark:text-gray-400 mb-10">새로운 기회나 협업에 대해 이야기 나눠요.</p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
           <a
-            href="mailto:darkgx21@gmail.com"
+            href="https://mail.google.com/mail/?view=cm&to=dev8603d@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer" 
             class="px-8 py-3 bg-indigo-600 hover:bg-indigo-700 text-white rounded-lg font-medium transition-colors"
           >
             이메일 보내기
           </a>
           <a
-            href="https://mail.google.com/mail/?view=cm&to=dev8603d@gmail.com"
+            href="https://github.com"
             target="_blank"
             rel="noopener noreferrer"
             class="px-8 py-3 border border-gray-300 dark:border-gray-700 hover:border-indigo-600 dark:hover:border-indigo-400 text-gray-700 dark:text-gray-300 rounded-lg font-medium transition-colors"
