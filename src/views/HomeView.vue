@@ -102,7 +102,7 @@ const blogPosts = (blogPostsData as BlogPost[]).slice(0, 3)
             이메일 보내기
           </a>
           <a
-            href="https://github.com"
+            href="https://mail.google.com/mail/?view=cm&to=dev8603d@gmail.com"
             target="_blank"
             rel="noopener noreferrer"
             class="px-8 py-3 border border-gray-300 dark:border-gray-700 hover:border-indigo-600 dark:hover:border-indigo-400 text-gray-700 dark:text-gray-300 rounded-lg font-medium transition-colors"
