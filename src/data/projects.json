@@ -3,7 +3,7 @@
     "id": "football-quiz",
     "title": "축덕 퀴즈",
     "subtitle": "Full Stack Web Service",
-    "description": "축구 선수 퀴즈 기반 게임형 웹 서비스. Redis 캐싱과 랭킹 시스템이 적용된 풀스택 프로젝트.",
+    "description": "축구 선수 퀴즈 기반 게임형 웹 서비스. 회원 시스템, 풋코인 상점·구독 결제, 관리자 운영 도구까지 갖춘 풀스택 프로젝트.",
     "techStack": ["NestJS", "PostgreSQL", "Prisma", "Redis", "React", "TypeScript", "Tailwind"],
     "liveUrl": "https://football-quiz-web.vercel.app/",
     "githubUrl": "https://github.com/ksc-dev-lab/football-quiz",
@@ -22,19 +22,29 @@
     }, {
       "url": "https://ksc-dev.tistory.com/35",
       "title": "축덕 퀴즈: 복구코드 추가 구현 + UI 개선 + UX 개선 기록"
+    },{
+      "url": "https://ksc-dev.tistory.com/45",
+      "title": "축덕 퀴즈 서비스 개발기 - 축구 선수 퀴즈 서비스 아키텍처 및 결제 시스템 고도화기 (1부)"
+    },  {
+      "url": "https://ksc-dev.tistory.com/46",
+      "title": "축덕 퀴즈 서비스 개발기 - 사용자 경험(UX) 단차 극복 및 관리자 운영 도구 고도화 (2부)"
+    },  {
+      "url": "https://ksc-dev.tistory.com/47",
+      "title": "축덕 퀴즈 서비스 개발기 - 결제 안정화부터 대규모 리팩토링까지의 심층 기록(3부)"
     }],
     "category": "game",
     "features": [
-      "퀴즈 플레이 시스템",
+      "퀴즈 플레이 시스템 (무한 모드 포함)",
       "TOP10 랭킹 시스템",
-      "무한 모드",
-      "기록 저장/조회",
-      "복구 코드 시스템"
+      "회원가입 · 로그인",
+      "풋코인 상점 & 구독 결제",
+      "출석체크 · 이벤트 · 공지사항",
+      "관리자 운영 도구"
     ],
     "highlights": [
       "Redis Cache-Aside 패턴 적용 (TTL 60s)",
-      "CSRF 방어 구현",
-      "CORS 설정"
+      "PortOne·Polar 국내/해외 결제 연동",
+      "권한(Role) 기반 관리자 가드 & 소프트 삭제 탈퇴"
     ],
     "portfolioImg": "football-quiz.PNG"
   },
@@ -42,8 +52,8 @@
     "id": "retro-tetris",
     "title": "레트로 테트리스",
     "subtitle": "Full Stack Web Game",
-    "description": "웹 기반 고전 테트리스 게임. Canvas API와 게임 루프를 직접 구현한 프로젝트.",
-    "techStack": ["NestJS", "PostgreSQL", "Prisma", "React", "TypeScript"],
+    "description": "웹 기반 고전 테트리스 게임. 회원 시스템, 레트로코인 상점·구독 결제, 이벤트·공지사항, 관리자 운영 도구까지 갖춘 풀스택 프로젝트. Canvas API로 게임 루프를 직접 구현했습니다.",
+    "techStack": ["NestJS", "PostgreSQL", "Prisma", "Redis", "React", "TypeScript"],
     "liveUrl": "https://tetris-retro-web.vercel.app/",
     "githubUrl": "https://github.com/ksc-dev-lab/tetris-retro",
     "blogUrlArr": [{
@@ -68,39 +78,44 @@
     "category": "game",
     "features": [
       "블록 이동/회전 시스템",
-      "점수 및 레벨 시스템",
-      "게임 오버 처리",
-      "TOP10 랭킹 시스템",
-      "복구 코드 시스템"
+      "회원가입 · 로그인 · 프로필",
+      "출석체크 & 이어서하기",
+      "레트로코인 상점 & 구독 결제",
+      "이벤트 · 공지사항 · 관리자 도구",
+      "TOP10 랭킹 시스템"
     ],
     "highlights": [
       "Canvas API 게임 루프 직접 구현",
-      "CSRF 방어 구현",
-      "백엔드 랭킹 API 연동"
+      "JWT 인증 & Cloudinary 프로필 이미지 업로드",
+      "PortOne·Polar 결제 + 정기구독 웹훅 처리"
     ],
     "portfolioImg": "retro-tetris.PNG"
   },
   {
-    "id": "asset-portfolio",
-    "title": "자산 포트폴리오 벤치마크",
-    "subtitle": "FrontEnd Web Service",
-    "description": "자산 포트폴리오를 시각화하고 벤치마크 지수와 비교하는 데이터 분석 대시보드.",
-    "techStack": ["Next.js", "React", "TypeScript", "Tailwind", "Recharts"],
-    "liveUrl": "https://asset-portfolio-benchmark.vercel.app/",
-    "githubUrl": "https://github.com/ksc-dev-lab/asset-portfolio-benchmark",
-    "blogUrlArr": [],
-    "category": "data",
+    "id": "idea-checker",
+    "title": "아이디어 검증 툴",
+    "subtitle": "Full Stack SaaS",
+    "description": "사이드 프로젝트 아이디어를 입력하면 수익모델, 개발 난이도, 리스크를 진단해주는 아이디어 검증 SaaS.",
+    "techStack": ["Next.js", "PostgreSQL", "Prisma", "Claude API", "TypeScript"],
+    "liveUrl": "https://personal-project-idea-checker-nine.vercel.app/",
+    "githubUrl": "https://github.com/ksc-dev-lab/personal-project-idea-checker",
+    "blogUrlArr": [{
+      "url": "https://ksc-dev.tistory.com/44",
+      "title": "아이디어 검증 툴 MVP 탄생기 : 모노레포부터 듀얼 결제, 성능 최적화까지 달린 13편의 기록"
+    }],
+    "category": "service",
     "features": [
-      "자산 포트폴리오 관리",
-      "자산 비중 시각화",
-      "수익률 분석",
-      "벤치마크 비교"
+      "아이디어 진단 리포트 생성",
+      "수익모델 제안",
+      "개발 난이도 추정",
+      "리스크 플래그 안내",
+      "구독 결제 시스템"
     ],
     "highlights": [
-      "Recharts를 활용한 인터랙티브 차트",
-      "GitHub Pages 정적 배포",
-      "로컬 스토리지 데이터 관리"
+      "Claude API 티어별 모델 배정 (Haiku/Sonnet)",
+      "PortOne·Polar 국내/해외 결제 연동",
+      "IP·디바이스 핑거프린팅 기반 어뷰징 방지"
     ],
-    "portfolioImg": "asset-portfolio-benchmark.PNG"
+    "portfolioImg": "person-project-idea-checker.png"
   }
 ]
